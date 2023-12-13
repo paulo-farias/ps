@@ -1,0 +1,141 @@
+
+charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	}
+	
+html {
+	background-color:#0A0A0A;
+	color: #CCCCCC;
+}
+
+header{
+	font-family: courier, sans-serif;
+	margin-top: 50px;
+}
+
+
+header > h2 {
+	font-family: arial, sans-serif, monospace;
+}
+
+.span-pip{
+	margin-left: 15px;
+}
+
+nav {
+	text-align: right;
+	min-width: 300px;
+	max-width: 800px;
+	margin: auto;
+	padding-bottom: 6px;
+}
+
+.container1{
+	text-align: left;
+	display: inline-block;
+}
+
+.container1 > a {
+	color: #cdc4c4;
+	text-decoration: none;
+	padding: 5px;
+}
+
+nav a:hover{
+	text-decoration: underline;
+}
+
+#container2 {
+	margin-top: 17px;
+}
+
+#titulo {
+	margin-top: 21px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #cdc4c4;
+} 
+
+#post {
+	color: grey;
+	text-decoration: none;
+}
+
+#post:hover {
+	text-decoration: underline;
+}
+
+main{
+	font-family: arial, sans-serif, monospace;
+	font-weight: normal;
+	min-width: 300px;
+	max-width: 800px;
+	margin: auto;
+	padding: 20px 20px 188px 20px;
+}
+
+#data {
+	display: inline-block;
+	font-size: 0.8em;
+}
+
+article > h2 {
+	text-align: center;
+}
+
+article > p, ul {
+	font-size: 0.9em;
+}
+
+main > article > p, h3, a, ul {
+	text-align: justify;
+	letter-spacing: 1px; 
+	
+}
+
+#gitlab-img {
+	margin-bottom: -6px;
+}
+
+.ancora {
+	text-decoration: none;
+	color: gray;
+}
+
+.p_link {
+	text-decoration: none;
+	font-size: 11px;
+	text-align: center;
+	font-size: 0.7em;
+	color: gray; 
+}
+ 
+pre {
+	height: 46px;
+	background-color: #141414;
+}
+
+footer{
+	font-family: courier, sans-serif, monospace;
+	color: grey;
+	text-align: center;
+	padding: 3px;
+}
+
+footer > p {
+	background-color: #333333;
+	padding: 10px;
+}
+
+footer > p > a {
+	color: gray;
+	text-decoration: none;
+}
+
+footer > p > a:hover {
+	text-decoration: underline;
+}
+

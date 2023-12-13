@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"content="width=device-width, initial-scale=1,0">
+	<title>ps-farias</title>
+	<link href="../../estilos/style_art.css" rel="stylesheet">  
+	
+</head>
+                                                          
+<body>
+	<header>
+		<nav>
+			<div style="margin-bottom:16px;margin-top:7px;margin-right:4px;"class="container1">
+				<a href="../../index.html" target="_self">voltar</a><span class="span-pip">|</span>
+			</div>
+			<div class="container1">
+				<a href="../../comentario.html" target="_self"  style="margin-right:5px;"href="#">comente</a>
+			</div>
+			<p id="data">novembro 14, 2023 | de paulo farias</p>
+		</nav>
+	</header><                
+	<main>
+		<article>
+			<h2>Acessar o gopher com o lynx no termux</h2>
+			<br>
+			<p>
+				Antes de existir a web para conectar-se a internet nos anos 90 era utilizado o gopher,
+				um protocolo diferente do http que serve informações em texto puro. Ainda hoje ele
+				serve a usuários que buscam simplicidade no uso de ferramentas da internet.
+			</p>
+			<p class="tamanho-font">
+				Para navegar no gopher é necessário um cliente. Neste artigo vamos lidar com o lynx.
+			</p>
+			<h3>Requisitos:</h3>
+			<ul>
+				<li>android 5.0 - 12.0</li>
+				<li>f-droid</li>
+				<li>termux</li>
+				<li>termux</li>
+			</ul>
+			<h3>Instalação:</h3>
+			<p>
+				Com um celular rodando um sistema android, é necessário o f-droid instalado. O f-droid
+				é um catálogo de aplicativos, funciona como a google play, porém os aplicativos
+				contidos na plataforma são de software livre. No site do <a class="ancora" href="https://f-droid.org/pt_BR/" target="_blank"><abbr title="https://f-droid.org/pt_BR">f-droid</abbr></a>
+				baixe o apk e prossiga com a instalação.
+
+			<p>Dentro do aplicativo f-droid, aguarde a atualização do repositório. É automático.</p>
+			<p>
+				O passo seguinte é instalar o termux, um emulador de terminal para android que executa
+				comandos de unix e pacotes disponíveis do seu próprio repositório.
+			</p>
+			<p >
+				Após a atualização do repositório no f-droid, procure o app termux no botão pesquisa,
+				vai surgir uma lista de app termux, instale o que aparecer a descrição ‘Emulador de
+				terminal com pacotes’. Durante a data desta postagem, a versão atual do termux é 0.118.0.
+			 </p>
+			 <br>
+			<a class="ancora" href="https://gitlab.com/paulofarias/img-ps-farias/-/blob/main/art1/captura1.4.png?ref_type=heads" target="_blank"><p class="p_link" >- ver captura de imagem no gitlab</p></a>
+			<br>
+			<p><strong>O f-droid não recomenda</strong> instalar o emulador na google play por motivo do termux não esta
+			recebendo mais atualizações na loja.</p>
+		
+			<p>Abra o aplicativo termux, e para saber se tudo está funcionando corretamente, atualize o
+				repositório no console:
+			</p>
+			<pre>
+				<code>
+ pkg update
+				</code>
+			</pre>
+			<br>
+			<pre>
+				<code>
+ pkg upgrade
+				</code>
+			</pre>
+			<br>
+			<a class="ancora" href="https://gitlab.com/paulofarias/img-ps-farias/-/blob/main/art1/captura2.2.png?ref_type=heads" target="_blank"><p class="p_link" >- ver captura de imagem no gitlab</p></a>
+			<br>
+			<p>
+				Por último, dentro do termux, instale o lynx, este programa irá acessar a web em modo texto.
+				Ele é rápido e simples de usar, com suporte para navegação via FTP, Gopher, HTTP, HTTPS,
+				NNTP e o sistema de arquivos local. 
+			</p>
+			<pre>
+				<code>
+ pkg install lynx
+				</code>
+			</pre>
+			<p>Para a execução do lynx é só informar o nome do programa e o parâmetro, uma URL.</p>
+			<pre>
+				<code>
+ lynx gopher://vaporhole.xyz/1/~paulofarias
+				</code>
+			</pre>
+			<p>
+				O controle de navegação entre as páginas são os botões de seta para esquerda(voltar),
+				direita(seguir). Para acessar os menus e rolagem, segue a mesma lógica, seta para
+				baixo(descer)e seta para cima(subir). Botão enter para entrar em um diretório ou ler um
+				arquivo.
+			</p>
+			<br>
+			<a class="ancora" href="https://gitlab.com/paulofarias/img-ps-farias/-/blob/main/art1/captura3.2.png?ref_type=heads" target="_blank"><p class="p_link" >- ver captura de imagem no gitlab</p></a>
+			<br>
+			<h3>Como pesquisar no gopher</h3>
+			<p>
+				Dentro da rede gopher existe sistemas de busca para encontrar outros sites gopher e arquivos, estes
+				sistemas são chamados de  índices pesquisáveis, um deles é o Veronica-2.
+			</p>
+			<p>Encontre o ‘(?) Search Veronica-2’ e pesquise todos os títulos conhecidos na rede.</p>
+			<pre>
+				<code>
+ lynx gopher://floodgap.com
+				</code>
+		   </pre>
+			<br>
+			<a class="ancora" href="https://gitlab.com/paulofarias/img-ps-farias/-/blob/main/art1/captura4.2.png?ref_type=heads" target="_blank"><p class="p_link" >- ver captura de imagem no gitlab</p></a>
+			<br>
+			<p>
+				Com acesso a rede no gopherhole floodgap.com, uma listagem de gopher server aparecerá com
+				vários “buracos” DIR(diretórios), documentos e arquivos.
+			</p>
+		</article>
+	</main>
+	
+	<footer>
+		<p>
+			Copyright (c) 2023 paulo farias
+			| <a href="#" target="_self">ps-farias@protonmail.com</a>
+		</p>
+	</footer>
+
+</body>
+
+</html>

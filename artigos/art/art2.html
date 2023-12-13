@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"content="width=device-width, initial-scale=1,0">
+	<title>ps-farias</title>
+	<link href="../../estilos/style_art.css" rel="stylesheet">  
+	
+</head>
+                                                          
+<body>
+	<header>
+		<nav>
+			<div style="margin-bottom:16px;margin-top:7px;margin-right:4px;"class="container1">
+				<a href="../../index.html" target="_self">voltar</a><span class="span-pip">|</span>
+			</div>
+			<div class="container1">
+				<a href="../../comentario.html" target="_self"  style="margin-right:5px;"href="#">comente</a>
+			</div>
+			<br>
+			</div>
+			<p id="data">novembro 15, 2023 | de paulo farias</p>
+		</nav>
+	</header>                
+	<main>
+		<article>
+			<h2>Termux e conexão no vaporHole</h2>
+			<br>
+			<p>
+				Para quem mora no terminal realizando tarefas de estudos,
+				criando um servidorzinho e codando, chega um momento que
+				precisamos logar no irc ou aparece uma luz para resolver
+				aquele bug na pressa e não é toda hora que temos acesso
+				a um pc. 
+			</p>
+			<p>
+				Meu objetivo com esse tutorial é mostrar alguns comandos
+				de termux para quem é membro do vaporHole ter mais
+				acessibilidade em conectar ao projeto de qualquer lugar.
+			</p>
+			<br>
+			<pre id="tel" style="background-color:#0A0A0A;">
+				   __i
+				 |---|    
+				 |[_]|    
+				 |:::|    
+				 |:::|    
+				 `\   \   
+				   \_=_\
+			</pre>
+			<br>
+			<br>                          
+			<br>
+			<br>
+			<p>
+			<p>
+				O termux permite executar comandos e aplicações do linux dentro
+				do emulador. Funcionando como um pequeno sistema operacional,
+				com um total de 2385 pacotes recebendo um trabalho contínuo de atualização.
+				<a class="ancora" href="https://github.com/termux/termux-packages" target="_blank">termux-packages</a>
+			</p>
+				Veja o <a  class="ancora" href="art1.html" target="_self">primeiro artigo</a> na minha página falando da instalação
+				do termux e o uso com o lynx.
+			</p>
+			<h3>Configuração </h3>
+			<p>
+				Tendo o termux instalado e atualizado, para ter acesso remoto de
+				dentro do terminal, é importante uma pré-configuração no console
+				para o controle do gerenciamento de dados entre o termux e o
+				usuário, necessário para a transferência da chave ssh nos
+				documentos do usuário do android até a pasta destino no termux. 
+			</p>
+			<p>digite o comando para ativar o compartilhamento de arquivo:</p>
+			                                       
+			<pre>
+				<code>
+ termux-setup-storage
+				</code>
+			</pre>
+			<br>
+			<p>
+				Conceda as permissões se aparecerem caixas de diálogos. Este comando
+				vai criar um diretório com o nome storage na sua /home e com isso o
+				acesso ao compartilhamento de arquivos já está ativo. 
+				</p>
+			<p>
+				Caso o comando não funcione, é porque o pacote <code>termux-tools</code> não está
+				instalado. Este pacote de ferramentas faz parte do repositório <code>main</code> do Termux
+				Packages e vai resolver o problema.
+			</p>
+			<pre>
+				<code>
+ Pkg install termux-tools
+				</code>
+			</pre>
+			<p>e depois repita o comando:</p>
+			<pre>
+				<code>
+ termux-setup-storage
+				</code>
+			</pre>
+			<br>
+			<a class="ancora" href="https://gitlab.com/paulofarias/img-ps-farias/-/blob/main/art2/captura.png?ref_type=heads" target="_blank"><p class="p_link" >- ver captura de imagem no gitlab</p></a>
+			<br>
+			<h3>Conectando ao vaporHole </h3>
+			<p>
+				É através do utilitário openssh que o termux irá fazer a conexão. O pacote precisa
+				ser baixado. Após baixado, o diretório oculto .ssh é criado na /home do usuário, 
+				e é nesse diretório oculto que será transferido sua id_rsa.
+			</p>
+			<pre>
+				<code>
+ pkg install openssh
+				</code>
+			</pre>
+			 <p>Use meios para transferência de arquivo do seu computador para sua pasta dentro do android. 
+			 	Atenção! Utilize uma pasta que o termux fez a linkagem, exemplos das pastas comuns compartilhadas do
+			 	diretório  /storage criado pelo comando <code>termux-setup-storage</code> são: dcim, music, downloads, movies,
+				pictures. E então copie e transfira a chave id_rsa para o diretório /home/.ssh
+			</p>
+			<p>
+				Com sua chave já dentro do diretório, siga o processo padrão para entrar no servidor como
+			 	normalmente você entra pelo pc.
+			</p>
+			<p>
+				Tudo está pronto para aproveitar o vaporHole no seu celular, aprendendo com o fórum interno com dicas de
+				tecnologia, linguagens a seu serviço para programar em C, python, javascript etc. Além de jogos, uma rádio local e outros.
+			</p>                                      
+		</article>
+	</main>
+	
+	<footer>
+		<p>
+			Copyright (c) 2023 paulo farias
+			| <a href="#" target="_self">ps-farias@protonmail.com</a>
+		</p>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	}
+
+
+@font-face{
+		font-family: 'Cmun';
+		src: url('fonts/cmunrm.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+}
+
+	
+html {
+	background-color: #262220;
+	/*background-color: #0A0A0A;*/
+	/*background-color: #9F9F9F;*/
+	color: black;
+}
+
+header{
+	height: 388.333px;
+	background-color: #262220;
+	/*background-color: #0A0A0A;*/
+	font-family: courier, sans-serif, monospace;
+	text-align: center;
+}
+
+#linha {
+	margin-left: 18px;
+}
+
+#linha2 {
+	 border: none;
+    border-right: 1px solid hsla(200, 10%, 50%,100);
+    height: 100vh;
+    width: 1px;
+	
+}
+
+nav {
+	padding-right: 21px;
+	padding-top: 30px;
+	text-align: right;
+}
+
+span {
+	color: gray;
+}
+
+span > a {
+	color: gray;
+}
+
+#span-peq {
+	font-size: 12px;
+}
+
+time {
+	font-size: 12px;
+}
+
+
+#cod {
+	display: inline-block;
+}
+
+
+#ini {
+	display: inline-block;
+}
+
+#com {
+	display: inline-block;
+}
+
+#cod > a {
+	color: white;
+	text-decoration: none;
+}
+
+#cod > a:hover {
+	text-decoration: underline;
+}
+
+#ini > a {
+	color: white;
+	text-decoration: none;
+}
+
+#ini > a:hover {
+	text-decoration: underline;
+}
+
+#com > a {
+	color: white;
+	text-decoration: none;
+}
+
+#com > a:hover {
+	text-decoration: underline;
+}
+
+main{
+	/*border: 1px solid black;*/
+	box-shadow: 8px 8px 3px black;
+	background-color: white;
+	min-width: 300px;
+	max-width: 1056px;
+	margin-top: 7px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px 20px 188px 20px;
+	margin-bottom: 30px;
+}
+
+
+article {
+	font-family: 'Cmun'; 
+}
+
+
+footer{
+	font-family: courier, sans-serif, monospace;
+	text-align: center;
+	padding: 3px;
+}
+
+footer > p {
+	color:  #cdc4c4;
+	padding: 10px;
+}
+
+footer > p > a {
+	color: #cdc4c4;
+	text-decoration: none;
+}
+
+footer > p > a:hover {
+	text-decoration: underline;
+}
+
+
+
