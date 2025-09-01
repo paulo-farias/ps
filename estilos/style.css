@@ -29,11 +29,10 @@ nav {
 pre {
 	color: #CDC4C4;
 	font-family: courier, sans-serif, monospace;
-	font-size: 0.8em;
+	font-size: 12px;
 }
 
 pre > a {
-	text-decoration: none;
 	color: #CDC4C4;
 }
 
