@@ -39,14 +39,12 @@
 		}
 		
 		button {
-			padding: 3px;
+			padding: 8px;
 			border: none;
 			margin-top: 8px;
 			font-size: 14px;
 			color: #cdc4c4;
 			background-color: #262220;
-			border-radius: 4px;
-	
 		}
 		
 		li {
@@ -56,7 +54,12 @@
 		#recado {
 			font-size: 11px;
 			color: red;
-		}                 
+		}
+		
+		hr {
+			margin-top: 26px;
+		}
+		                 
 	</style>
 </head>
                                                           
@@ -64,35 +67,77 @@
 	<main>
 		<article>
 			<a href="index.html" target="_self" id="link_home">início</a>
+			<hr>
+			<br>
+			<br>
 			<h2>Comentários e opinião do usuário</h2>
+			<br>
 			<p id="recado">Esta página está em construção.<br>
-				Espere pacientemente. Estamos preparando um novo espaço para postagem de comentários.<br>
+				Espere pacientemente.
+				Estamos preparando um novo espaço para postagem de comentários.<br>
 				Envie sua mensagem por e-mail no formulário abaixo.
 			</p>
 			<br>
 			<p>Olá visitantes!</p>
 			<p>
 				Sejam bem vindos a esta página. Esta é a seção de comentários e opiniões
-				do meu blog, eu não queria colocá-la em todas as páginas, então extraí
+				do meu blog. Eu não queria colocá-la em todas as páginas, então extraí
 				isso em um local separado para que todos que quiserem possam deixar
 				seu recado.
 			</p>
 			<p>
-				Gostaria de dedicar um momento para expressar meu agradecimento pela sua
-				visita nesse projeto. Me sentirei honrado se fui capaz de resolver alguma
-				tarefa relacionado ao software livre e comandos de gnu/linux nos meus
-				tutoriais, de uma resposta se isso ajudou, o que poderemos somar e também
-				escreva sobre o OUTPUT.
+				Meu agradecimento pela sua
+				visita nesse projeto e uma satisfação se fui capaz de resolver alguma
+				tarefa relacionado ao software livre e comandos de unix com os tutorias.
+				De sua resposta se isso ajudou e o que poderemos somar.
 			</p>
 			<p>
 				Esse foi um desafio por envolver uma linguagem de marcação de texto que
-				jurava não ser importante pra mim agora escrever texto em Latex. Meu
-				comprometimento é trazer esse sistema de preparação de documento servindo
-				como um amplificador de estímulo a leitura, provendo o conteúdo em
-				distribuição digital. Espero que você goste de ler nesse formato e
-				continue tendo o hábito de ler cada dia mais.
-				Envie sua mensagem, de sua opinião, ficarei feliz em responder.  
+				eu não tinha intenção agora escrever em Latex. Enquanto eu
+				desenvolvia este site pensava no que eu iria fazer com ele além de
+				escrever sobre comandos. Os textos republicados neste sistema de preparação
+				de documento Latex é para servir como um amplificador de estímulo a leitura
+				e prover esse conteúdo em distribuição digital. Espero que você goste de
+				ler nesse formato e continue tendo o hábito de ler cada dia mais. Envie
+				seu comentário, você também pode enviar sua dica de texto
+				escrevendo no alto da mensagem o TÍTULO e AUTOR do texto, em adição a
+				LICENÇA se houver. Eu irei escrever sua recomendação em Latex e será postado
+				aqui no meu site. Muito obrigado pela leitura.  
 			</p>
+			</p>
+			<p>
+				 Os arquivos para download estão no meu repsitório de código do gitlab.
+				 Cada post em Latex é criado um diretório na raiz do projeto
+				 <a href="https://gitlab.com/paulofarias/ps-tex" target="_blank">ps-tex.</a>
+				 Veja a lista atual de arquivos prontos para baixar:
+			</p>
+		<code>
+			<ul>
+			<li>os formatos prontos de ficheiro mais comuns suportados pelos e-reads (kindle, kobo, nook tablet, sony DPT-R P1/B e onyx boox nota pro):</li>
+				<ul>
+				 	<li>.epub</li>
+					<li>.mobi</li>
+					<li>.azw3</li>
+				<li>.rtf</li>
+				</ul>
+			<br>	
+			<li>portable document format</li>
+				<ul>
+					<li>.pdf</li>
+				</ul>
+			<br>
+			<li>código fonte do Latex</li>
+				<ul>
+					<li>.tex</li>
+				</ul>
+			<br>
+			<li>todos os arquivos compactados</li>
+				<ul>
+					<li>.zip</li>
+				</ul>
+			</ul>
+		</code>
+			<br>
 			<p>
 				Quebrar as regras pode resultar na exclusão do seu comentário e/ou no
 				banimento do IP se necessário, impedindo-o o acesso a este site
@@ -123,12 +168,13 @@
 					complicações legais para o serviço, os donos do servidor e todos os usuários.
 				</p>
 				<br>
-			<p>*Comentário (máximo 500 caracteres):</p>
+			<p>*Comentário</p>
 			<div class="container">
 				 <form action="https://formsubmit.co/ps-farias@protonmail.com" method="POST">
+					<input type="hidden" name="_next" value="https://psfarias.com.br/obrigado.html">
 				 	<input type="text" name="name" class="form-control" placeholder="seu nome" required >
 				 	<input type="email" name="email" class="form-control" placeholder="seu e-mail" required>
-				 	<textarea maxlength="500" name="message" class="form-control" placeholder=" ..." required></textarea>
+				 	<textarea  name="message" class="form-control" placeholder=" ..." required></textarea>
 				 	<button type="submit">Enviar mensagem</button>
 				 </form>
 			</div>                
@@ -137,8 +183,8 @@
 	
 	<footer>
 		<p>
-			Copyright (c) 2023 paulofarias
-			| <a href="#" target="_self">ps-farias@protonmail.com</a>
+			Copyright (c) 2023 - 2025 Paulo Farias
+			<!-- | <a href="#" target="_self">ps-farias@protonmail.com</a> -->
 		</p>
 	</footer>
 </body>
